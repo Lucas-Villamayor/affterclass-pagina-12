@@ -1,0 +1,29 @@
+.header img {
+    width: 200px;
+    padding: 8px; }
+  
+.header li {
+    list-style-type: none;
+    font-family: sans-serif;
+    padding: 5px; }
+
+.header {
+        box-shadow: 1px 4px 1px cadetblue;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+      
+.header a {
+        text-decoration: none; }
+
+        @media (max-width: 760px){
+            .header {align-items: flex-start;
+           }
+            .header img { padding: 0 50px;
+           margin: 2px;
+           }
+            .header ul{
+                padding: 0px;
+                align-items: flex-end;
+           }
+           }

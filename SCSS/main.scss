@@ -1,0 +1,79 @@
+@import "../utilidades/reset";
+
+
+@import "../secciones/header";
+@import "../secciones/header";
+
+
+* { margin: 0;
+    padding: 0;}
+    
+    /* --------------------------HEADER / MENU -------------------------- */
+    
+    
+    
+    .tag { background-color: red;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding-bottom: 3px 4px;}
+    
+   
+    .enlaces { display: flex;
+         justify-content: space-evenly;
+         flex-wrap: wrap;}
+    
+    .divisor-1 {margin: 10px 20px;}
+    
+    .redes {list-style-type: none;
+    display: flex;}
+    
+    .redes li { padding: 10px;
+    margin: 0 10px;}
+    
+   
+    aside {display: none;}
+    
+    /* ----------------------ARTICULO-------------------- */
+    
+
+    
+    
+    /* 
+    ------------------------------------ FOOTER -------------------------- */
+    
+   
+    
+    /* ------------------------------------MEDIA QUERIES------------------------ */
+    @media (max-width: 760px){
+     .header {align-items: flex-start;
+    }
+     .header img { padding: 0 50px;
+    margin: 2px;
+    }
+     .header ul{
+         padding: 0px;
+         align-items: flex-end;
+    }
+    }
+    
+    
+    @media (min-width: 1044px) {
+    .premium{ 
+         display: grid;
+         grid-template-columns: 1fr .5fr;
+         grid-template-areas: 
+             "menu aside"
+             ;
+         }
+    
+    menu { grid-area: menu;
+    }
+    
+    aside { display: block;
+         grid-area: aside;
+    }
+    }
+    /* 
+    ---------------------------------------- publicidad ------------------------------- */
+    
